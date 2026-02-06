@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Study Planner</title>
 </head>
+
 <body>
 
     <header>
@@ -30,9 +32,45 @@
                 <h3>Today's Schedule</h3>
                 <ul></ul>
             </article>
-            
+
             <article>
                 <h3>Upcoming Deadlines</h3>
+                <ul></ul>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <h2>Subject Management</h2>
+            </header>
+
+            <article>
+                <h3>Add Subject</h3>
+                <form>
+                    <fieldset>
+                        <legend>New Subject</legend>
+
+                        <label>
+                            Subject Name: 
+                            <input type="text" required />
+                        </label>
+
+                        <label>
+                            Priority:
+                            <select>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </label>
+
+                        <button type="submit">Add</button>
+                    </fieldset>
+                </form>
+            </article>
+
+            <article>
+                <h3>Subjects</h3>
                 <ul></ul>
             </article>
         </section>
@@ -40,4 +78,5 @@
     </main>
 
 </body>
+
 </html>
