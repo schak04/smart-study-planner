@@ -21,6 +21,8 @@
         </nav>
     </header>
 
+    <hr>
+
     <main>
 
         <section>
@@ -208,6 +210,19 @@
         </section>
 
     </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; <span id="footerYear"></span> Saptaparno Chakraborty</p>
+    </footer>
+
+    <script>
+        const startYear = 2026;
+        const currentYear = new Date().getFullYear();
+        const footerYear = document.getElementById("footerYear");
+        footerYear.textContent = (startYear === currentYear) ? currentYear : `${startYear}-${currentYear}`;
+    </script>
 
 </body>
 
