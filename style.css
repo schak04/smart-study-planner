@@ -1,0 +1,40 @@
+* {
+    margin-bottom: 10px
+}
+
+body {
+    font-family: Georgia;
+    font-size: 18px;
+    padding: 0 20px 0 20px;
+}
+
+button, select, input[type="time"], input[type="date"] {
+    cursor: pointer;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: hsla(0, 0%, 12%, 0.8);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+legend {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+
+fieldset {
+    border-radius: 20px;
+}
