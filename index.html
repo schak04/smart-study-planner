@@ -122,6 +122,46 @@
             </article>
         </section>
 
+        <section>
+            <header>
+                <h2>Task Manager</h2>
+            </header>
+
+            <article>
+                <h3>Add Task</h3>
+
+                <form>
+                    <fieldset>
+                        <legend>Task Details</legend>
+
+                        <label>Task Title:
+                            <input type="text" required />
+                        </label>
+
+                        <label>Completion Deadline:
+                            <input type="date" required />
+                        </label>
+
+                        <label>Type:
+                            <select>
+                                <option value="assignment">Assignment</option>
+                                <option value="self-learning">Self-Learning</option>
+                                <option value="exam-prep">Exam Prep</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </label>
+
+                        <button type="submit">Add Task</button>
+                    </fieldset>
+                </form>
+            </article>
+
+            <article>
+                <h3>Task List</h3>
+                <ul id="taskList"></ul>
+            </article>
+        </section>
+
     </main>
 
 </body>
