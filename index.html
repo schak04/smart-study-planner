@@ -33,17 +33,17 @@
 
             <article>
                 <h3>Subjects</h3>
-                <ul></ul>
+                <ul id="dashboardSubjectsList"></ul>
             </article>
 
             <article>
                 <h3>Today's Schedule</h3>
-                <ul></ul>
+                <ul id="todaySchedule"></ul>
             </article>
 
             <article>
                 <h3>Upcoming Deadlines</h3>
-                <ul></ul>
+                <ul id="upcomingDeadlines"></ul>
             </article>
         </section>
 
@@ -56,18 +56,18 @@
 
             <article>
                 <h3>Add Subject</h3>
-                <form>
+                <form id="subjectForm">
                     <fieldset>
                         <legend>New Subject</legend>
 
                         <label>
                             Subject Name:
-                            <input type="text" placeholder="Eg. Operating Systems" required />
+                            <input id="subjectName" type="text" placeholder="Eg. Operating Systems" required />
                         </label>
 
                         <label>
                             Priority:
-                            <select>
+                            <select id="subjectPriority">
                                 <option value="high">High</option>
                                 <option value="medium">Medium</option>
                                 <option value="low">Low</option>
@@ -81,7 +81,7 @@
 
             <article>
                 <h3>Subjects</h3>
-                <ul></ul>
+                <ul id="subjectList"></ul>
             </article>
         </section>
 
@@ -94,23 +94,23 @@
 
             <article>
                 <h3>Add Study Slot</h3>
-                <form>
+                <form id="studySlotForm">
                     <fieldset>
                         <legend>Study Time</legend>
 
                         <label>
                             Subject:
-                            <input type="text" placeholder="Eg. Computational Theory" required />
+                            <input id="studySlotSubject" type="text" placeholder="Eg. Computational Theory" required />
                         </label>
 
                         <label>
                             Start Time:
-                            <input type="time" required />
+                            <input id="studySlotStart" type="time" required />
                         </label>
 
                         <label>
                             End Time:
-                            <input type="time" required />
+                            <input id="studySlotEnd" type="time" required />
                         </label>
 
                         <button type="submit">Add Slot</button>
@@ -120,12 +120,12 @@
 
             <article>
                 <h3>Daily Timetable</h3>
-                <table></table>
+                <table id="dailyTimetable"></table>
             </article>
 
             <article>
                 <h3>Weekly Timetable</h3>
-                <table></table>
+                <table id="weeklyTimetable"></table>
             </article>
         </section>
 
@@ -139,16 +139,16 @@
             <article>
                 <h3>Add Task</h3>
 
-                <form>
+                <form id="addTaskForm">
                     <fieldset>
                         <legend>Task Details</legend>
 
                         <label>Task Title:
-                            <input type="text" placeholder="Eg. Write project docs" required />
+                            <input id="taskTitle" type="text" placeholder="Eg. Write project docs" required />
                         </label>
 
                         <label>Completion Deadline:
-                            <input type="date" required />
+                            <input id="taskDeadline" type="date" required />
                         </label>
 
                         <button type="submit">Add Task</button>
